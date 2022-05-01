@@ -16,7 +16,7 @@ header {
 }
 
 .hero-section {
-  background-image: url(./images/start-screen-background.jpg);
+  background-image: url(../../assets/images/start-screen-background.jpg);
   background-position: center;
   background-size: cover;
   min-height: 100vh;
@@ -383,7 +383,7 @@ nav ul li:nth-child(1) {
 /* Footer section */
 
 footer {
-  background-image: url(./images/start-screen-background.jpg);
+  background-image: url(../../assets/images/start-screen-background.jpg);
   background-position: center;
   background-size: cover;
   height: 50vh;
