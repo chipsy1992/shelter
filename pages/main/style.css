@@ -1,0 +1,508 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1.875rem 0;
+}
+
+.hero-section {
+  background-image: url(../../assets/images/start-screen-background.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 2rem;
+  color: #f1cdb3;
+  line-height: 2.2rem;
+  letter-spacing: 0.6px;
+}
+
+.logo h3 {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #ffffff;
+  line-height: 0.9rem;
+  padding-left: 0.2rem;
+  padding-top: 0.3rem;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+nav ul li {
+  list-style: none;
+  color: #fff;
+  font-size: 0.938rem;
+  cursor: pointer;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.938rem;
+  cursor: pointer;
+}
+
+nav ul li:nth-child(1) {
+  border-bottom: 3px solid #f1cdb3;
+}
+
+.hero-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5rem;
+  padding-top: 5.6rem;
+}
+
+.hero-content h2 {
+  width: 80%;
+  font-size: 2.75rem;
+  font-family: "Georgia";
+  font-weight: 400;
+  line-height: 3.57rem;
+  color: #ffffff;
+}
+
+.hero-content p {
+  width: 90%;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  color: #cdcdcd;
+}
+
+.btn {
+  list-style: none;
+  text-decoration: none;
+  width: 40%;
+  font-family: "Georgia";
+  background-color: #f1cdb3;
+  padding: 0.9rem 2.8rem;
+  border-radius: 100px;
+  outline: none;
+  font-size: 1rem;
+  color: #292929;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.puppy-img {
+  width: 75%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.puppy-img img {
+  max-width: 80%;
+}
+
+/* about section */
+
+.about {
+  padding: 5rem 0;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 45%;
+}
+
+.about-text h3 {
+  font-family: "Georgia";
+  font-weight: 400;
+  line-height: 2.8rem;
+  font-size: 2.2rem;
+  color: #545454;
+}
+
+.about-text p {
+  font-size: 0.9rem;
+  color: #4c4c4c;
+  width: 75%;
+  line-height: 1.5rem;
+}
+
+.puppy-img-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 45%;
+}
+
+/* Pets Section */
+
+.pets {
+  background-color: #f6f6f6;
+  padding: 5rem 0;
+}
+
+.pets-heading {
+  font-family: "Georgia";
+  font-weight: 400;
+  line-height: 2.8rem;
+  text-align: center;
+  font-size: 2.2rem;
+  color: #545454;
+  padding-bottom: 2.5rem;
+}
+
+.card-btn {
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+  padding: 0.9rem 2.8rem;
+  font-size: 1rem;
+  color: #292929;
+}
+
+.button-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4.3rem;
+}
+
+.button-primary a {
+  font-family: "Georgia";
+  font-style: normal;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: #292929;
+  background: #f1cdb3;
+  border-radius: 100px;
+  padding: 0.9rem 2.8rem;
+}
+
+.card-hover:hover {
+  background-color: #f2eded;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.card-hover:hover .card-btn {
+  background-color: #f1cdb3;
+  color: #493224;
+  transition: all 0.3s ease-in;
+}
+
+/* Help section */
+
+.help {
+  background-color: #fff;
+  padding: 5rem 0;
+}
+
+.help-heading {
+  padding-bottom: 1.8rem;
+  text-align: center;
+  font-size: 2.2rem;
+  color: #545454;
+}
+
+.help-content {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 1.25rem;
+}
+
+.help-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 11%;
+  margin: 1.56rem 2.8rem;
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box p {
+  width: 130%;
+  font-family: "Georgia";
+  font-size: 1.25rem;
+  color: #545454;
+  padding-top: 1.25rem;
+}
+
+/* Donation Section */
+
+.donation {
+  background-color: #f6f6f6;
+  padding: 5rem 0;
+}
+
+.donation-content {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.875rem;
+}
+
+.donation-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donation-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.donation-heading {
+  font-size: 2.2rem;
+  font-family: "Georgia";
+  font-weight: 400;
+  line-height: 2.8rem;
+  color: #545454;
+}
+
+.donation-heading-five {
+  font-size: 0.9rem;
+  font-family: "Georgia";
+  font-weight: 400;
+  line-height: 1rem;
+  color: #545454;
+}
+
+.credit-card {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1cdb3;
+  padding: 0.6rem 0.9rem;
+  border-radius: 9px;
+}
+
+.credit-card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.credit-card-content h4 {
+  cursor: pointer;
+}
+
+.credit-card-content svg {
+  color: #292929;
+  width: 30px;
+  height: 23px;
+}
+
+.credit-card-content h4 {
+  font-size: 1.25rem;
+  font-family: "Georgia";
+  font-weight: 400;
+  line-height: 1.4rem;
+  color: #545454;
+}
+
+.donation-paragraph {
+  font-size: 0.75rem;
+  font-style: italic;
+  font-family: "Georgia";
+  font-weight: 400;
+  line-height: 1.1rem;
+  color: #b2b2b2;
+}
+
+/* Footer section */
+
+footer {
+  background-image: url(../../assets/images/start-screen-background.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+}
+
+.footer-contacts {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.footer-locations {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.875rem;
+}
+
+.footer-img {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-img img {
+  height: 50vh;
+  padding-top: 3.1rem;
+}
+
+.email-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.email-contact a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.phone-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.phone-contacts a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.boston-adress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.boston-adress a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.london-adress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.london-adress a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer-heading {
+  font-size: 2.2rem;
+  font-family: "Georgia";
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.footer-svg {
+  color: #f1cdb3;
+}
+
+.footer-svg.email {
+  width: 40px;
+  height: 26px;
+}
+
+.footer-svg.phone {
+  width: 40px;
+  height: 32px;
+}
+
+.footer-svg.adress {
+  width: 22px;
+  height: 32px;
+}
+
+.footer-text {
+  font-size: 1.25rem;
+  font-family: "Georgia";
+  font-weight: 400;
+  color: #f1cdb3;
+}
