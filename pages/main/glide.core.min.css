@@ -20,7 +20,7 @@
   white-space: nowrap;
   display: flex;
   justify-content: space-evenly;
-  gap: 50px;
+  gap: 3.125rem;
   align-items: center;
   flex-wrap: nowrap;
   will-change: transform;
@@ -35,7 +35,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 15px 0;
+  padding: 0.9rem 0;
   max-width: 50%;
   white-space: normal;
   user-select: none;
@@ -44,12 +44,12 @@
 }
 
 .glide__slide img {
-  padding: 15px 0;
+  padding: 0.9rem 0;
 }
 
 .glide__slide p {
-  margin-bottom: 30px;
-  font-size: 20px;
+  margin-bottom: 1.875rem;
+  font-size: 1.25rem;
   color: #545454;
 }
 

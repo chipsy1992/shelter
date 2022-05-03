@@ -33,6 +33,10 @@ header {
   align-items: center;
 }
 
+.logo a {
+  text-decoration: none;
+}
+
 .logo h1 {
   font-family: "Georgia";
   font-weight: 400;
@@ -40,6 +44,7 @@ header {
   color: #f1cdb3;
   line-height: 2.2rem;
   letter-spacing: 0.6px;
+  cursor: pointer;
 }
 
 .logo h3 {
@@ -204,7 +209,7 @@ nav ul li:nth-child(1) {
   text-decoration: none;
   border: 2px solid #f1cdb3;
   border-radius: 100px;
-  padding: 0.9rem 2.8rem;
+  padding: 0.7rem 2.8rem;
   font-size: 1rem;
   color: #292929;
 }
