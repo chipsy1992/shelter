@@ -131,15 +131,16 @@ nav ul li:nth-child(2) {
 }
 
 .card-hover:hover {
-  background-color: #f2eded;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px #f1cdb3;
+  transition: all 0.2s ease-in;
   cursor: pointer;
-  transition: all 0.3s ease-in;
 }
 
 .card-hover:hover .card-btn {
-  background-color: #f1cdb3;
-  color: #493224;
-  transition: all 0.3s ease-in;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px #cb966f;
+  transition: all 0.2s ease-in;
 }
 
 /* Buttons */
