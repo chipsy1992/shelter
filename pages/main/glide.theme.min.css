@@ -81,3 +81,27 @@
   cursor: -moz-grabbing;
   cursor: -webkit-grabbing;
 }
+
+@media screen and (max-width: 768px) {
+  .glide__arrow {
+    width: 48px;
+    height: 48px;
+  }
+  .glide__arrow--left {
+    left: -2em;
+  }
+  .glide__arrow--right {
+    right: -1.4em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .glide__arrow--left {
+    top: 24em;
+    left: 2em;
+  }
+  .glide__arrow--right {
+    top: 24em;
+    right: 2em;
+  }
+}

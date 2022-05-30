@@ -70,3 +70,9 @@
 .glide--rtl {
   direction: rtl;
 }
+
+@media screen and (max-width: 320px) {
+  .glide__slides {
+    gap: unset;
+  }
+}

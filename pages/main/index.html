@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./glide.core.min.css">
     <link rel="stylesheet" href="./glide.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Shelter</title>
   </head>
   <body>
+
+    
     <header>
+      
       <div class="container">
         <div class="hero-header">
           <div class="logo">
@@ -18,15 +22,22 @@
             <h3>Shelter for pets in Boston</h3>
           </div>
           <nav>
-            <ul>
+            <div class="open-btn">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-items">
               <li><a href="#">About the shelter</a></li>
               <li><a href="../pets/index.html">Our pets</a></li>
               <li><a href="#help">Help the shelter</a></li>
               <li><a href="#footer">Contacts</a></li>
+              <div class="close-btn">
+                <i class="fa-solid fa-bars"></i>
+              </div>
             </ul>
           </nav>
         </div>
       </div>
+    
     </header>
 
     <main>
@@ -500,14 +511,25 @@
 
 
      <!-- <script src="./app.js"></script> -->
+     <script src="./app.js"></script>
+     
      <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
      <script>
        let config = {
          type: "carousel",
          startAt: 0,
          perView: 3,
+         breakpoints: {
+           768: {
+             perView: 2
+           },
+           600: {
+             perView: 1
+           }
+         }
        };
        new Glide(".glide", config).mount();
      </script>
+     
   </body>
 </html>

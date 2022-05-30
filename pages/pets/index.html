@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Shelter</title>
    
   </head>
   <body>
     <header>
+    
       <div class="container">
         <div class="hero-header">
           <div class="logo">
@@ -17,11 +19,17 @@
             <h3>Shelter for pets in Boston</h3>
           </div>
           <nav>
-            <ul>
+            <div class="open-btn">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-items">
               <li><a href="../main/index.html">About the shelter</a></li>
               <li><a href="#our-pets">Our pets</a></li>
               <li><a href="../../pages/main/index.html#help">Help the shelter</a></li>
               <li><a href="#footer">Contacts</a></li>
+              <div class="close-btn">
+                <i class="fa-solid fa-bars"></i>
+              </div>
             </ul>
           </nav>
         </div>
@@ -67,12 +75,12 @@
                     <p>Charly</p>
                     <a href="#/" class="card-btn">Learn more</a>
                   </div>
-                  <div class="card card-hover">
+                  <div class="card card-hover display">
                     <img src="../../assets/images/pets-scarlet.png" alt="Woody-puppy"></img>
                     <p>Scarlet</p>
                     <a href="#/" class="card-btn">Learn more</a>
                   </div>
-                  <div class="card card-hover">
+                  <div class="card card-hover display">
                     <img src="../../assets/images/pets-freddie.png" alt="Woody-puppy"></img>
                     <p>Freddie</p>
                     <a href="#/" class="card-btn">Learn more</a>
@@ -147,5 +155,8 @@
           </div>
         </div>
       </footer>
+
+
+      <script src="../main/app.js"></script>
   </body>
 </html>
